@@ -1,0 +1,109 @@
+.vault-form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.vault-form-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.vault-form-description {
+  margin: 0;
+  color: #475569;
+  font-size: 1rem;
+}
+
+.vault-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.vault-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.vault-input {
+  border: 1px solid #cbd5f5;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: #f8fafc;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vault-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+  background-color: white;
+}
+
+.vault-submit {
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.85rem 1.5rem;
+  background: linear-gradient(135deg, #4f46e5, #0ea5e9);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.vault-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  box-shadow: none;
+}
+
+.vault-submit:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.25);
+}
+
+.vault-error {
+  margin: 0;
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.vault-success {
+  margin: 0;
+  color: #059669;
+  font-weight: 600;
+}
+
+.vault-hint {
+  background-color: #f1f5f9;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  color: #334155;
+}
+
+.vault-hint h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.vault-hint ul {
+  margin: 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.vault-hint li::marker {
+  color: #6366f1;
+}
