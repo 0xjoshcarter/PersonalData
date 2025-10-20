@@ -1,8 +1,4 @@
-const FALLBACK_ADDRESS = '0x0000000000000000000000000000000000000000';
-
-const configuredAddress = (import.meta.env?.VITE_PRIVATE_BANK_VAULT_ADDRESS as string | undefined) ?? '';
-
-export const CONTRACT_ADDRESS = configuredAddress.length > 0 ? configuredAddress : FALLBACK_ADDRESS;
+export const CONTRACT_ADDRESS = "0x59F2F947D888Af864cAb4b78352502D6475D93D7";
 
 export const CONTRACT_ABI = [
   {
