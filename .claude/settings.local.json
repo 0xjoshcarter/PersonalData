@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree -L 2 -I 'node_modules|artifacts|cache|.git' /Volumes/Disk5/github2/PersonalData)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

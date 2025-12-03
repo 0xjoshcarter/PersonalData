@@ -2,11 +2,11 @@
 pragma solidity ^0.8.24;
 
 import {FHE, euint32, euint64, externalEuint32, externalEuint64} from "@fhevm/solidity/lib/FHE.sol";
-import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 
 /// @title PrivateBankVault
 /// @notice Stores encrypted bank card credentials for individual users using Zama FHE
-contract PrivateBankVault is SepoliaConfig {
+contract PrivateBankVault is ZamaEthereumConfig {
     struct BankCard {
         string bankName;
         euint64 cardNumber;
